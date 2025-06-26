@@ -24,15 +24,19 @@ body {
 
 @keyframes postItRain1 {
   0% {
-    transform: translateY(-650px);
+    opacity: 0;
+    scale: 3;
+  }
+  55% {
+    opacity: 0;
   }
   100% {
-    transform: translate(0);
+    opacity: 1;
   }
 }
 
 #rainingPostIt1 {
-  animation: postItRain1 2.5s cubic-bezier(0.52, 0.36, 0.91, 0.6);
+  animation: postItRain1 2s cubic-bezier(0.52, 0.36, 0.91, 0.6);
 }
 
 .post-it {
