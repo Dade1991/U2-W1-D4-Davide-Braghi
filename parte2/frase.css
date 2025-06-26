@@ -8,3 +8,27 @@
 7 ritardare progressivamente l'animazione delle altre 2 parole 
 */
 
+main {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  padding-top: 200px;
+}
+
+#testoAlternato {
+  font-size: 2em;
+}
+
+.parole {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  color: rgba(87, 87, 255, 0.705);
+  height: 1.5em;
+}
+
+.parole i {
+  height: 1.5em;
+  transition: transform 0.5s ease-in-out;
+  position: absolute;
+}
